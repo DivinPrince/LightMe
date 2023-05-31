@@ -1,0 +1,41 @@
+.desktop_nav{
+    display: none;
+    align-items: center;
+}
+.mobile_nav{
+    display: flex;
+}
+.sub_nav{
+    align-items: center;
+    display: flex;
+    /* gap: 12px; */
+    justify-content: space-between;
+}
+@media (min-width: 640px) {
+    .desktop_nav {
+        /* background: #000; */
+        display: flex;
+    }
+    .mobile_nav{
+        display: none;
+    }
+}
+.profile{
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 50%;
+}
+.social_icon{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.658);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown{
+    border: 1px solid grey;
+    /* padding: 0;
+    gap: 0; */
+    align-items: flex-end;
+}
