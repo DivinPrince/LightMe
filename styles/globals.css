@@ -17,6 +17,7 @@
   justify-content: center;
   padding: 120px 24px 160px 24px;
   pointer-events: none;
+  background: #000;
 }
 
 .main:before {
@@ -28,7 +29,6 @@
   height: 100%;
   top: 0;
 }
-
 .main:after {
   content: "";
   background-image: url("/assets/images/grid.svg");
@@ -38,7 +38,7 @@
   height: 100%;
   top: 0;
   opacity: 0.4;
-  filter: invert(1);
+  /* filter: invert(1); */
 }
 
 .gradient {
@@ -51,10 +51,10 @@
       hsla(215, 98%, 61%, 1) 0px,
       transparent 0%
     ),
-    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, black 50%),
-    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, black 50%),
-    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, black 50%),
-    radial-gradient(at 97% 96%, rgb(0, 0, 0) 0px, black 50%),
+    radial-gradient(at 97% 21%, rgb(255, 97, 6) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, rgb(255, 97, 6) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, rgb(255, 97, 6) 0px, transparent 50%),
     radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
     radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
   position: absolute;
@@ -87,7 +87,7 @@
 }
 
 .head_text {
-  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-white sm:text-6xl;
 }
 
 .orange_gradient {
@@ -103,7 +103,8 @@
 }
 
 .desc {
-  @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
+  @apply mt-5 text-lg sm:text-xl max-w-2xl;
+  color: grey;
 }
 
 .search_input {
@@ -115,7 +116,8 @@
 }
 
 .glassmorphism {
-  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+  @apply rounded-xl border bg-black/0 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur-[0px] p-5;
+  border: 1px solid grey;
 }
 
 .prompt_layout {
@@ -138,9 +140,12 @@
 
 /* Nav Component */
 .logo_text {
-  @apply max-sm:hidden font-semibold text-lg text-black tracking-wide;
+  @apply max-sm:hidden font-semibold text-lg text-white tracking-wide;
 }
+.logo{
+  @apply  font-semibold text-lg text-white tracking-wide;
 
+}
 .dropdown {
   @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-center;
 }
@@ -179,4 +184,19 @@
 }
 #file{
   display: none;
+}
+.icons{
+  margin-top: 50px;
+  display: flex;
+  /* fle; */
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+}
+.icons .icon{
+  width: 50px;
+}
+.icon:not(.grid1){
+  transform: translateY(100px);
+  /* width: 200px; */
 }

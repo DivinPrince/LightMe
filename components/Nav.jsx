@@ -35,7 +35,7 @@ export default function Nav() {
     return (
         <nav className='flex-between items-center w-full mb-16 pt-3'>
             {/* <link rel="stylesheet" href="" /> */}
-            <Link href='/'>
+            <Link href='/' className='logo'>
                 <h1>Light Me.</h1>
             </Link>
             {/* desk nav */}
@@ -43,11 +43,8 @@ export default function Nav() {
                 {session?.user ? (
                     <div className='sub_nav md:gap-5'>
                         <Link href='/upload'>
-                            <AiOutlineUpload size='30px' strokeWidth='50px' />
+                            <AiOutlineUpload size='30px' fill='white' strokeWidth='10px' />
                         </Link>
-                        <button type='button' onClick={signOut} className='outline_btn'>
-                            Sign out
-                        </button>
                         <Link href='/profile'>
                             <Image
                                 src={session?.user.image}
@@ -107,6 +104,7 @@ export default function Nav() {
                             alt='menu'
                             width={27}
                             height={27}
+                            className='cursor-pointer'
                             onClick={() => {
                                 setToogleDrop((prev) => !prev)
                             }}
@@ -129,16 +127,6 @@ export default function Nav() {
                                 >
                                     Upload Project
                                 </Link>
-                                <button
-                                    type='button'
-                                    className='outline_btn social_icon'
-                                    onClick={() => {
-                                        setToogleDrop(false)
-                                        signOut()
-                                    }}
-                                >
-                                    Sign Out
-                                </button>
                             </div>
                         )}
                     </>
