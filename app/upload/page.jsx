@@ -19,7 +19,7 @@ export default function page() {
     setIsSubmitting(true)
     try {
       const res = await fetch('/api/project/new',{
-          method: POST,
+          method: 'POST',
           body: JSON.stringify({
             name: project.name,
             image: project.image,
@@ -33,7 +33,7 @@ export default function page() {
         }
       } catch (error) {
         // console.log(res);
-        console.log(error);
+        console.log(error.message);
       }finally{
         setIsSubmitting(false)
       }

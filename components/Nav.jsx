@@ -3,6 +3,7 @@ import menu from '../public/assets/icons/menu.svg'
 import { useState, useEffect } from 'react'
 import Link from 'next/Link'
 import Image from 'next/Image'
+import img from '../public/assets/images/dpcode.jpg'
 import { AiOutlineUpload, AiFillGithub, AiFillGoogleCircle } from 'react-icons/ai'
 import { signIn, signOut, useSession, getProviders } from 'next-auth/react'
 import Github from 'next-auth/providers/github'
@@ -10,7 +11,14 @@ import Google from 'next-auth/providers/google'
 import Provider from './Provider'
 
 export default function Nav() {
-    const { data: session } = useSession();
+    // const { data: session } = useSession();
+    const session = {
+        user: {
+            email: 'dpcode36@gmail.com',
+            name: 'dpcodes',
+            image: img
+        }
+    }
     const [islogedIN, setIslogedIN] = useState(true)
     const [provids, setProvids] = useState(null)
     const [toogleDrop, setToogleDrop] = useState(false)
@@ -40,13 +48,13 @@ export default function Nav() {
                         <button type='button' onClick={signOut} className='outline_btn'>
                             Sign out
                         </button>
-                        <Link href='/profile' className='profile'>
+                        <Link href='/profile'>
                             <Image
                                 src={session?.user.image}
                                 alt='profile'
                                 width={47}
                                 height={47}
-                                className=''
+                                className='profile'
                             />
                         </Link>
                     </div>

@@ -17,7 +17,6 @@ const ProjectSchema = new Schema({
     type: String,
     required: [true, 'image is required.'],
   }
-
 });
 const Project = models.Project || model('Project', ProjectSchema);
 

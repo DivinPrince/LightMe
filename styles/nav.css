@@ -21,9 +21,8 @@
     }
 }
 .profile{
-    border: 1px solid;
-    padding: 8px;
     border-radius: 50%;
+    /* object-fit: cover; */
 }
 .social_icon{
     width: 100%;
