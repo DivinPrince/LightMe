@@ -30,8 +30,6 @@ export default function Nav() {
         }
         setProviders()
     }, [])
-
-    console.log(provids);
     return (
         <nav className='flex-between items-center w-full mb-16 pt-3'>
             {/* <link rel="stylesheet" href="" /> */}
