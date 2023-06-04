@@ -200,3 +200,8 @@
   transform: translateY(100px);
   /* width: 200px; */
 }
+.project_nav{
+  padding: 10px;
+  border-radius: 160px;
+  color: white;
+}
