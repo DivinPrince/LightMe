@@ -8,7 +8,7 @@ export const connectToDB = async () => {
     return;
   }
   try {
-    await mongoose.connect(process.env.MONGODB_URI, {
+    await mongoose.connect('mongodb://localhost/lightme', {
       dbName: "lightme",
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -19,3 +19,4 @@ export const connectToDB = async () => {
     console.log(error);
   }
 }
+// process.env.MONGODB_URI
