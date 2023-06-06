@@ -4,6 +4,7 @@ import img from '../public/assets/images/dpcode.jpg'
 import React from 'react'
 import Social from '@components/social'
 import socials from '@components/constants/socials'
+import { useSession } from 'next-auth/react'
 
 export default function page() {
   let SocialLinks = socials.map(social => (
@@ -13,6 +14,14 @@ export default function page() {
       {...social}
     />
   ))
+  // const { data: session } = useSession();
+  const session = {
+    user: {
+      email: 'dpcode36@gmail.com',
+      name: 'dpcodes',
+      image: img
+    }
+  }
   return (
     <section className='w-full flex-col flex-center'>
       <h1 className='head_text'>Disover & Share</h1>
