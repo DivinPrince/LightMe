@@ -11,14 +11,14 @@ import Google from 'next-auth/providers/google'
 import Provider from './Provider'
 
 export default function Nav() {
-    // const { data: session } = useSession();
-    const session = {
-        user: {
-            email: 'dpcode36@gmail.com',
-            name: 'dpcodes',
-            image: img
-        }
-    }
+    const { data: session } = useSession();
+    // const session = {
+    //     user: {
+    //         email: 'dpcode36@gmail.com',
+    //         name: 'dpcodes',
+    //         image: img
+    //     }
+    // }
     const [islogedIN, setIslogedIN] = useState(true)
     const [provids, setProvids] = useState(null)
     const [toogleDrop, setToogleDrop] = useState(false)
