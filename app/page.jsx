@@ -39,12 +39,12 @@ export default function page() {
           <>
             <Link href="">
               <button className='glassmorphism project_nav'>
-                upload
+                upload →
               </button>
             </Link>
             <Link href="">
               <button className='glassmorphism project_nav'>
-                view projects
+                view projects →
               </button>
             </Link>
           </>
