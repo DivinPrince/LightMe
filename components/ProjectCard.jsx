@@ -1,7 +1,15 @@
 import React from 'react'
+import Image from 'next/image'
 
-export default function ProjectCard() {
+export default function ProjectCard({project}) {
   return (
-    <div>ProjectCard</div>
+    <div>
+        <Image 
+            src={project.creator.image}
+            alt='owner'
+            width={40}
+            height={40}
+        />
+    </div>
   )
 }
