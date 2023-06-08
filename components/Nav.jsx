@@ -58,7 +58,7 @@ export default function Nav() {
                         <button
                             type='button'
                             onClick={() => setToogleDropIn((prev) => !prev)}
-                            className='bg-white'
+                            className='outline_btn bg-white'
                         >
                             Sign In
                         </button>
