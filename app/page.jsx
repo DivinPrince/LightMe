@@ -37,12 +37,12 @@ export default function page() {
 
         {session.user ? (
           <>
-            <Link href="">
+            <Link href="/upload">
               <button className='glassmorphism project_nav'>
                 upload →
               </button>
             </Link>
-            <Link href="">
+            <Link href="/projects">
               <button className='glassmorphism project_nav'>
                 view projects →
               </button>
