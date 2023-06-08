@@ -5,13 +5,13 @@ import React from 'react'
 export default function Form({ type, project, setProject, submitting, submit }) {
     const upload = (e) => {
         let reader = new FileReader()
-        reader.readAsDataURL(e.target.files[0])
         console.log(e.target.files[0])
         reader.addEventListener("load", e => {
             let file = reader.result
             setProject({ ...project, image: file })
-            console.log(project);
         })
+        console.log(project);
+        reader.readAsDataURL(e.target.files[0])
     }
     // console.log(project);
     return (
