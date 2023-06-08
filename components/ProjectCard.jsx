@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 export default function ProjectCard({project}) {
   return (
-    <div>
+    <div className='prompt_card'>
         <Image 
-            src={project.creator.image}
+            src={project.image}
             alt='owner'
-            width={40}
+            width={800}
             height={40}
         />
     </div>

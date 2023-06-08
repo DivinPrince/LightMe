@@ -31,7 +31,6 @@ export default function page() {
     },[])
   return (
     <section>
-        page
         <ProjectLists
             data={projects} 
             handleLink={()=>{}}
