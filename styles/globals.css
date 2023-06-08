@@ -205,3 +205,7 @@
   border-radius: 160px;
   color: white;
 }
+.btn{
+  border: 1px solid grey;
+  color: white;
+}
