@@ -1,8 +1,8 @@
 "use client"
 import menu from '../public/assets/icons/menu.svg'
 import { useState, useEffect } from 'react'
-import Link from 'next/Link'
-import Image from 'next/Image'
+import Link from 'next/link'
+import Image from 'next/image'
 import img from '../public/assets/images/dpcode.jpg'
 import { AiOutlineUpload, AiFillGithub, AiFillGoogleCircle } from 'react-icons/ai'
 import { signIn, signOut, useSession, getProviders } from 'next-auth/react'
