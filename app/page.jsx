@@ -3,7 +3,7 @@ import Link from 'next/link'
 import img from '../public/assets/images/dpcode.jpg'
 import React from 'react'
 
-import Social from '@components/social'
+import Social from '@components/Social'
 import socials from '@components/constants/socials'
 
 import { useSession } from 'next-auth/react'
