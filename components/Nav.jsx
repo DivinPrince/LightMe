@@ -23,7 +23,7 @@ export default function Nav() {
     const [provids, setProvids] = useState(null)
     const [toogleDrop, setToogleDrop] = useState(false)
     const [toogleDropin, setToogleDropIn] = useState(false)
-    useEffect(() => {
+    useEffect(() => { 
         const setProviders = async () => {
             const response = await getProviders()
             setProvids(response)
@@ -34,7 +34,7 @@ export default function Nav() {
         <nav className='flex-between items-center w-full mb-16 pt-3'>
             {/* <link rel="stylesheet" href="" /> */}
             <Link href='/' className='logo'>
-                <h1>Lihht Me.</h1>
+                <h1>Light Me.</h1>
             </Link>
             {/* desk nav */}
             <div className='desktop_nav relative'>
