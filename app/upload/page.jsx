@@ -18,7 +18,7 @@ export default function page() {
     e.preventDefault();
     setIsSubmitting(true)
     try {
-      const res = await fetch('/api/project/new',{
+      const res = await fetch('../api/project/new',{
           method: 'POST',
           body: JSON.stringify({
             name: project.name,
