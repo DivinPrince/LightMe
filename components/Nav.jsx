@@ -58,7 +58,7 @@ export default function Nav() {
                         <button
                             type='button'
                             onClick={() => setToogleDropIn((prev) => !prev)}
-                            className='glassmorphism'
+                            className='outline_btn btn'
                         >
                             Sign In
                         </button>
