@@ -1,6 +1,6 @@
-import { connectToDB } from "@utils/database"
 import Project from "@models/project";
-const POST = async (req,res ) =>{
+import { connectToDB } from "@utils/database"
+export const POST = async (req ) =>{
     const { userId, name, url, image} = await req.json()
     try {
         await connectToDB();
@@ -19,4 +19,3 @@ const POST = async (req,res ) =>{
             return new Response('failed',{status: 500})
     }
 }
-export default POST
