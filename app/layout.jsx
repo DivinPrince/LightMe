@@ -1,6 +1,7 @@
 import "@styles/globals.css";
 import  Nav from '@components/Nav'
 import  Provider from '@components/Provider'
+import icon from '@public/light.png'
 
 
 export const metadata = {
@@ -11,6 +12,7 @@ export const metadata = {
 const RootLayout = ({ children }) => (
   <html lang='en'>
     <body>
+      <link rel="icon" href={icon} />
       <Provider>
         <div className='main'>
           <div className='gradient'/>
