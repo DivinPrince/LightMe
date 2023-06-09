@@ -122,12 +122,12 @@
 
 .prompt_layout {
   @apply space-y-6 py-8 sm:gap-6 flex-wrap;
+}
+.project_contain{
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  height: fit-content;
 }
-
 /* Feed Component */
 .feed {
   @apply mt-16 mx-auto w-full max-w-xl flex justify-center items-center flex-col gap-2;

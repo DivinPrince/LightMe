@@ -3,7 +3,7 @@ import ProjectCard from '@components/ProjectCard'
 import React,{useEffect,useState} from 'react'
 const ProjectLists = ({data,handleLink}) =>{
     return (
-        <div className='promp_layout'>
+        <div className='promp_layout project_contain'>
             {data.map(project =>(
                 <ProjectCard
                     key={project.id}
