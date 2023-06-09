@@ -29,6 +29,7 @@ export default function ProjectCard({ project }) {
          alt="" 
          width={0}
          height={0}
+         className='profile'
         />
       </div>
       <div class="project_details">
