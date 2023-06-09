@@ -244,7 +244,7 @@
 .owner_img img{
   width: 100%;
   border-radius: 50%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .project_contents h1{
   font-size: 25px;
