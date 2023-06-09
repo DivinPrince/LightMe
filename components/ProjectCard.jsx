@@ -35,9 +35,9 @@ export default function ProjectCard({ project }) {
         <div class="owner_img">
           <Image
            src={project.creator.image} 
-           alt="" 
-           width={0}
-           height={0}
+           alt='profile'
+           width={47}
+           height={47}
            className='profile'
           />
         </div>
