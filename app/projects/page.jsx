@@ -30,7 +30,7 @@ export default function page() {
         fetchProjects()
     },[])
   return (
-    <section>
+    <section className='w-full'>
         <ProjectLists
             data={projects} 
             handleLink={()=>{}}
