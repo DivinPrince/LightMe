@@ -265,7 +265,7 @@
 .social a{
   text-align: center;
   background: #e7e7e713;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(25px);
   border: 1px solid rgba(128, 128, 128, 0.208);
   padding: 5px;
   border-radius: 50%;
