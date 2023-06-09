@@ -22,7 +22,7 @@
 }
 .profile{
     border-radius: 50%;
-    /* object-fit: cover; */
+    object-fit: none;
 }
 .social_icon{
     width: 100%;
