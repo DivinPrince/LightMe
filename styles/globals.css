@@ -209,3 +209,60 @@
   border: 1px solid grey;
   color: white;
 }
+.project_card{
+  background: #e7e7e713;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(128, 128, 128, 0.208);
+}
+.project_img{
+  width: 500px;
+}
+.project_img img{
+  width: 100%;
+  border-radius: 10px;
+}
+.project_details{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.owner_img{
+  width: 70px;
+}
+.owner_img img{
+  width: 100%;
+  border-radius: 50%;
+}
+.project_contents h1{
+  font-size: 25px;
+  color: rgb(230, 230, 230);
+}
+.project_contents p{
+  color: rgb(103, 103, 103);
+  font-family: cursive;
+}
+.social{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.social a{
+  text-align: center;
+}
+.social a:nth-last-child(1){
+  padding: 5px;
+  background: #000;
+  border-radius: 50%;
+}
+.social img{
+  width: 30px;
+}
