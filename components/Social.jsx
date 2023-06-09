@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+//mukuelys@gmail.com
 
 export default function social(props) {
     return (
