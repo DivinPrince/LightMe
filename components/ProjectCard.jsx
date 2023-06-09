@@ -1,15 +1,42 @@
 import React from 'react'
 import Image from 'next/image'
+import { comment_ico,visit_ico,github_ico } from '@public/assets'
 
-export default function ProjectCard({project}) {
+export default function ProjectCard({ project }) {
   return (
-    <div className='prompt_card'>
-        <Image 
-            src={project.image}
-            alt='owner'
-            width={800}
-            height={40}
+    <div class="project_card">
+      <div class="social">
+        <a href={project.url}>
+          <Image
+           src={visit_ico} 
+           alt="" 
+          />
+        </a>
+        <a href="">
+          <Image
+           src={github_ico} 
+           alt="" 
+          />
+        </a>
+      </div>
+      <div class="project_img">
+        <Image
+         src={project.image} 
+         alt="" 
         />
+      </div>
+      <div class="project_details">
+        <div class="owner_img">
+          <Image
+           src={project.creator.image} 
+           alt="" 
+          />
+        </div>
+        <div class="project_contents">
+          <h1>{project.name}</h1>
+          <p>{project.creator.email}</p>
+        </div>
+      </div>
     </div>
   )
 }
