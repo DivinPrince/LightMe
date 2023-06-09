@@ -26,7 +26,7 @@ export default function page() {
   }
   return (
     <section className='w-full flex-col flex-center'>
-      <h1 className='head_text'>Disover & Share</h1>
+      <h1 className='head_text'>Discover & Share</h1>
       <br className='max-md:hidden' />
       <span className='head_text orange_gradient text-center'>Projects With Friends</span>
       <p className='desc text-center'>
