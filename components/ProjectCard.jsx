@@ -9,6 +9,8 @@ export default function ProjectCard({ project }) {
         <a href={project.url}>
           <Image
            src={visit_ico} 
+           width={0}
+           height={0}
            alt="" 
           />
         </a>
@@ -16,6 +18,8 @@ export default function ProjectCard({ project }) {
           <Image
            src={github_ico} 
            alt="" 
+           width={0}
+           height={0}
           />
         </a>
       </div>
@@ -23,6 +27,8 @@ export default function ProjectCard({ project }) {
         <Image
          src={project.image} 
          alt="" 
+         width={0}
+         height={0}
         />
       </div>
       <div class="project_details">
@@ -30,6 +36,8 @@ export default function ProjectCard({ project }) {
           <Image
            src={project.creator.image} 
            alt="" 
+           width={0}
+           height={0}
           />
         </div>
         <div class="project_contents">
