@@ -1,7 +1,7 @@
 import "@styles/globals.css";
 import  Nav from '@components/Nav'
 import  Provider from '@components/Provider'
-import icon from '../public/light.png'
+import icon from '../public/light1.png'
 
 
 export const metadata = {
