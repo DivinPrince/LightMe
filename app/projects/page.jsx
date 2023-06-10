@@ -1,10 +1,10 @@
 'use client'
 import ProjectCard from '@components/ProjectCard'
-import React,{useEffect,useState} from 'react'
-const ProjectLists = ({data,handleLink}) =>{
+import React, { useEffect, useState } from 'react'
+const ProjectLists = ({ data, handleLink }) => {
     return (
         <div className='promp_layout project_contain'>
-            {data.map(project =>(
+            {data.map(project => (
                 <ProjectCard
                     key={project.id}
                     project={project}
@@ -19,26 +19,37 @@ const ProjectLists = ({data,handleLink}) =>{
 
 export default function page() {
     const [projects, setProjects] = useState([])
-    useEffect(()=>{
-        const fetchProjects = async () =>{
-            const res = await fetch('/api/project')
-            const data = await res.json()
+    const [loading, setLoading] = useState(true)
+    useEffect(() => {
+        try {
+            const fetchProjects = async () => {
+                const res = await fetch('/api/project')
+                const data = await res.json()
 
-            setProjects(data)
+                setProjects(data)
+            }
+
+            fetchProjects()
+            
+        } catch (error) {
+            console.log(error.message);
+        } finally{
+            setLoading(false)
         }
+    }, [])
+    return (
+        <section className='w-full'>
+            <ProjectLists
+                data={projects}
+                handleLink={() => { }}
+            />
+            <div className={`${loading?'loader':'none'} text-white`}>
+                loading projects....
+            </div>
+        </section>
 
-        fetchProjects()
-    },[])
-  return (
-    <section className='w-full'>
-        <ProjectLists
-            data={projects} 
-            handleLink={()=>{}}
-        />
-    </section>
+    )
 
-  )
-  
 
 }
 
