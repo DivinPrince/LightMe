@@ -9,7 +9,6 @@ export const GET = async (req) => {
     // Perform an update operation on the projects
     // Example: projects[0].title = "Updated Title";
     // Save the updated project: await projects[0].save();
-
     return new Response(JSON.stringify(projects), { status: 200 });
   } catch (error) {
     console.log(error.message);
